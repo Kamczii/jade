@@ -1,0 +1,3 @@
+java -cp jade.jar jade.Boot -host 192.168.56.1 -port 1099 -local-host 192.168.56.1 -local-port 4646 -container-name kontener2 -container
+java -cp jade.jar jade.Boot -host 192.168.56.1 -port 1099 -local-host 192.168.56.1 -local-port 4647 -container-name kontener3 -container
+java -cp jade.jar jade.Boot -host 192.168.56.1 -port 1099 -local-host 192.168.56.1 -local-port 4648 -container-name kontener4 -container

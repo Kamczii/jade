@@ -36,7 +36,9 @@ public class MigratingAgent extends Agent {
     }
 
     public void setLocations(List<Location> locations) {
-        this.locations = new ArrayList<>(locations);
+        this.locations = new ArrayList<>();
+        this.locations.add(this.here());
+        this.locations.addAll(locations);
     }
 
     public Location pop() {

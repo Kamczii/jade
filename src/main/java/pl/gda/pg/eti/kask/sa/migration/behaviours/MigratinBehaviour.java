@@ -18,6 +18,9 @@ public class MigratinBehaviour extends SimpleBehaviour {
             Location location = this.myAgent.pop();
             Thread.sleep(2000);
             myAgent.doMove(location);
+            if (this.myAgent.locationsEmpty()) {
+                this.myAgent.travel();
+            }
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -26,5 +29,20 @@ public class MigratinBehaviour extends SimpleBehaviour {
     @Override
     public boolean done() {
         return myAgent.locationsEmpty();
+    }
+
+    @Override
+    public int onEnd() {
+        return super.onEnd();
+    }
+
+    @Override
+    public void block(long millis) {
+        super.block(millis);
+    }
+
+    @Override
+    public void restart() {
+        super.restart();
     }
 }

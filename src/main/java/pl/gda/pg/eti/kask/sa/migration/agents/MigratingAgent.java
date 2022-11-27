@@ -19,8 +19,13 @@ public class MigratingAgent extends Agent {
         ContentManager cm = getContentManager();
         cm.registerLanguage(new SLCodec());
         cm.registerOntology(MobilityOntology.getInstance());
+        this.travel();
+    }
+
+    public void travel() {
         this.addBehaviour(new RequestContainersListBehaviour(this));
     }
+
     @Override
     protected void afterMove() {
         super.afterMove();

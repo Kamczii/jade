@@ -11,7 +11,6 @@ import jade.lang.acl.ACLMessage;
 import pl.gda.pg.eti.kask.sa.migration.agents.MigratingAgent;
 
 import java.util.UUID;
-import java.util.logging.Level;
 
 public class RequestContainersListBehaviour extends OneShotBehaviour {
     protected final MigratingAgent myAgent;
